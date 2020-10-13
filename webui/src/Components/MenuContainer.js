@@ -17,4 +17,16 @@ const MenuContainer = styled('div')(
 	layout
 )
 
+const CreatorContainer = styled('tr')(
+	{
+		margin: 1,
+		padding: 15,
+		display: "flex",
+		justifyContent: "space-between"
+	},
+	space,
+	color,
+	layout
+)
+
 export default MenuContainer;

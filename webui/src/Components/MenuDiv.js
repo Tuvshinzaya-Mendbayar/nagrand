@@ -17,4 +17,15 @@ const MenuDiv = styled('div')(
 	flexbox
 )
 
+const MenuDiv = styled('tr')(
+	{
+		display: "flex",
+		flex: "1",
+	},
+	space,
+	color,
+	layout,
+	flexbox
+)
+
 export default MenuDiv;
