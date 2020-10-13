@@ -1,12 +1,17 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import theme from './theme.js';
-import IndexScreen from './Screens/IndexScreen.js';
+import Chatbot from 'react-chatbot-kit'
+import './App.css';
 
-const App = props => (
-  <ThemeProvider theme = { theme }>
-    <IndexScreen/>
-  </ThemeProvider>
-)
+import ActionProvider from './ActionProvider';
+import MessageParser from './MessageParser';
+import config from './config';
 
-export default App;
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Chatbot config={config} actionProvider={ActionProvider} 	    messageParser={MessageParser} />
+      </header>
+    </div>
+  );
+}
